@@ -1,0 +1,727 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Geomanist", serif;
+    /* background-image: url("../../public/images/Vector1.png"); */
+    /* background-color: #C1F1EE; */
+}
+
+.Download-App {
+    font-family: Geomanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    Width: 236px;
+    Height: 49px;
+    background-color: white;
+    border: 3px solid rgba(142, 95, 245, 1);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.login {
+    /* background-color: #4E59E7; */
+    color: white;
+    font-size: 18px;
+    font-Weight: 400;
+    Line-height: 18px;
+    border: none;
+    width: 140px;
+    height: 46px;
+    box-shadow: 0px 20px 50px rgba(78, 89, 231, 0.3);
+    border-radius: 23px;
+}
+
+.pragraph {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8F8F98;
+    width: 459px;
+    height: 120px;
+}
+
+.heading {
+    font-family: 'Geomanist';
+    font-style: normal;
+    color: #393939;
+}
+
+.heading_1 {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.Pages_style {
+    font-family: Geomanist;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.heading_2 {
+    font-family: Geomanist, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.Contact_Sales_btn {
+    width: 264px;
+    height: 66px;
+    /* box-shadow: 0px 20px 50px rgba(78, 89, 231, 0.3); */
+    border-radius: 33px;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* margin-top: 50px; */
+}
+
+.heading_4 {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #393939;
+}
+
+.pragraph_1 {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8F8F98;
+}
+
+.table-th {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #393939;
+}
+
+.table-td {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8F8F98;
+}
+
+.box {
+    background: linear-gradient(273.22deg, rgba(193, 241, 238, 0.5) -2.7%, #F1F4FF 99.64%, rgba(253, 206, 165, 0) 137.66%);
+    border-radius: 20px;
+}
+
+.box_1 {
+    font-family: Geomanist, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    height: 350px;
+    width: 270px;
+    color: #8F8F98;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.box_4 {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box_5 {
+    box-sizing: border-box;
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #8E5FF5;
+}
+
+.box_5_skybluecolor {
+    background: rgba(8, 192, 181, 1);
+}
+
+.box_5_boxshadow {
+    box-shadow: 0px 20px 50px 0px rgba(11, 193, 182, 0.3);
+}
+
+.Started-but {
+    width: 264px;
+    height: 66px;
+    background: #4E59E7;
+    box-shadow: 0px 20px 50px rgba(78, 89, 231, 0.3);
+    border-radius: 33px;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.button {
+    width: 108.78px;
+    height: 36px;
+    border: none;
+    background: #DCE2FF;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.see-all {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.anymore {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    color: #4E59E7;
+}
+
+.Learn-More_1 {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.Disrupting {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color {
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    color: #4E59E7;
+}
+
+.Accounts-assets {
+    height: 107px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 0px rgba(78, 89, 231, 0.1);
+    margin-top: 150px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.section_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-images-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_1_img {
+    width: 406px;
+    height: 492px;
+}
+
+.start-verification-img {
+    width: 461px;
+    height: 471px;
+}
+
+.Group-17326-img {
+    width: 216px;
+    height: 71px;
+}
+
+.Group_17516_service_img {
+    width: 420px;
+    height: 462px;
+}
+
+.Group_17539_servic_img {
+    width: 500px;
+    height: 498px;
+}
+
+.Group_17489_service_img {
+    width: 540px;
+    height: 525px;
+}
+
+.Group_17519_service_img {
+    width: 501.83px;
+    height: 462px;
+}
+
+.Group_17520_service_img {
+    width: 564px;
+    height: 482px;
+
+}
+
+.Group_17517_service_img {
+    width: 444px;
+    height: 392px;
+}
+
+.service_Provider-img {
+    width: 455px;
+    height: 444px;
+}
+
+.Group_17513_service_img {
+    width: 389px;
+    height: 387px;
+}
+
+.download_Banner-img {
+    width: 563px;
+    height: 483px;
+}
+
+.Verified_img {
+    Width: 169px;
+}
+
+.finance-img {
+    width: 554.7px;
+    height: 710px;
+}
+
+.homepage_img {
+    width: 510px;
+    height: 682.5px;
+}
+
+.google-img {
+    width: 168px;
+    height: 53px;
+}
+
+.Sownoad-img {
+    Width: 777px;
+    Height: 562px;
+}
+
+.individual_accounts {
+    width: 539px;
+    height: 525px;
+}
+
+.Group-17353-img {
+    margin-left: 85%;
+}
+
+.individual_assets_img {
+    width: 484px;
+    height: 500px;
+}
+
+.individual_deposits_img {
+    width: 427px;
+    height: 482px;
+}
+
+.individual_payments_DebitCard_img {
+    Width: 457px;
+    Height: 357px;
+}
+
+.individual_payments_Peer_img {
+    Width: 471px;
+    Height: 441px;
+}
+
+.individual_investments_1_img {
+    Width: 397px;
+    Height: 565px;
+}
+
+.individual_investments_2_img {
+    width: 384px;
+    height: 570px;
+}
+
+.individual_investments_3_img {
+    width: 405px;
+    height: 578px;
+}
+
+.bussiness_deposits_img {
+    width: 480px;
+    height: 369px;
+}
+
+.bussiness_payments_1_img {
+    width: 507px;
+    height: 515.46px;
+}
+
+.bussiness_payments_2_img {
+    width: 407px;
+    height: 342.9px;
+}
+
+.Vector_pluse_img {
+    width: 20px;
+    height: 20px;
+    margin-left: 70%;
+}
+
+.bussiness_accounts_img {
+    width: 560px;
+    height: 484px;
+}
+
+.bussiness_finance_1_img {
+    width: 493px;
+    height: 336px;
+}
+
+.Group_17512_service_img {
+    width: 445px;
+    height: 418px;
+}
+
+.feature {
+    height: 130px;
+    width: 130px;
+}
+
+.icon-images-hw {
+    width: 30px;
+    height: 26.57px;
+}
+
+.Asked-questions {
+    Height: 500px;
+}
+
+.box-height-330 {
+    height: 330px;
+}
+
+/* .box-height-510 {
+    height: 510px;
+} */
+
+.width {
+    width: 370px;
+}
+
+.box-width {
+    width: 316px;
+}
+
+.box-height {
+    height: 520px;
+}
+
+.box-purple-height {
+    height: 580px;
+}
+
+.div-height {
+    Height: 82px;
+}
+
+.div-width {
+    Width: 1136px;
+}
+
+.header_height {
+    height: 500px;
+}
+
+.line-height-35 {
+    line-height: 35px;
+}
+
+.line-height-60 {
+    line-height: 60px;
+}
+
+.line-height-27 {
+    line-height: 27px;
+}
+
+
+.border_color_blue {
+    border: 2px solid rgba(78, 89, 231, 1)
+}
+
+.Latest-News {
+    background: rgba(216, 198, 255, 0.3);
+}
+
+.header_color_skyblue {
+    background: linear-gradient(273.22deg, rgba(193, 241, 238, 0.5) -2.7%, #F1F4FF 99.64%, rgba(253, 206, 165, 0) 137.66%);
+    /* background-image: url("../../public/images/Vector1.png");  */
+}
+
+.header_color_purple {
+    background: linear-gradient(282.31deg, #DCD7FF -0.39%, #F5F1FF 91.93%, rgba(217, 199, 255, 0) 106.75%);
+}
+
+.header_color_grey {
+    background: linear-gradient(281.47deg, rgba(135, 140, 166, 0.5) 2.26%, rgba(247, 247, 249, 0.13) 96.89%);
+}
+
+.background-color-blue {
+    background: rgba(220, 226, 255, 0.5);
+}
+
+.background-color-green {
+    background-color: rgba(193, 241, 238, 0.5);
+    position: absolute;
+    right: 30%;
+    top: 670%;
+}
+
+.background-color-parpule {
+    background: rgba(217, 198, 255, 0.3);
+}
+
+.Asked-questions-color {
+    background-color: rgba(246, 241, 255, 0.3);
+}
+
+.Zero-balance-purple {
+    background-color: rgba(220, 205, 252, 0.3);
+    height: 900px;
+}
+
+.Zero-balance-skyblue {
+    background: rgba(193, 241, 238, 0.5);
+    height: 900px;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-blue {
+    color: #4E59E7;
+}
+
+.color-parpule {
+    color: #8E5FF5;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-green {
+    color: #08C0B5;
+}
+
+.color_grey {
+    color: rgba(143, 143, 152, 1);
+}
+
+.login_button_color {
+    background-color: #4E59E7;
+}
+
+.sign_up_color {
+    background-color: #393939;
+}
+
+.margin_right {
+    margin-right: 90px;
+}
+
+.margin_top_100 {
+    margin-top: 100px;
+}
+
+.margin_left {
+    margin-left: 90px;
+}
+
+.margin {
+    margin-left: 30px;
+}
+
+.margin_top {
+    margin-top: 25px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.mr {
+    margin-right: 10px;
+}
+
+.margin_left_50 {
+    margin-left: 50px;
+}
+
+.margin_right_50 {
+    margin-right: 50px;
+}
+
+.padding_top_20 {
+    padding-top: 20px;
+}
+
+.padding_top_60 {
+    padding-top: 60px;
+}
+
+.pl {
+    padding-left: 30px;
+}
+
+.pt {
+    padding-top: 25px;
+}
+
+.padding_t {
+    padding-top: 15px;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
+
+.font-size-60 {
+    font-size: 60px;
+}
+
+.font-size-50 {
+    font-size: 50px;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-35 {
+    font-size: 35px;
+}
+
+.font-weight_400 {
+    font-weight: 400;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-weight {
+    font-weight: 700;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+    /* font-size: 40px; */
+}
+
+.text-transform {
+    text-transform: lowercase;
+}
+
+.box-shadow {
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.border_skyblue {
+    border: 1.5px solid rgba(8, 192, 181, 1)
+}
+
+.data {
+    border: none;
+    outline: none;
+}
+
+.Invest {
+    text-align: center;
+}
+
+.NavLink {
+    text-decoration: none;
+}
