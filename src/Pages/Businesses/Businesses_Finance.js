@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+
 import Header from '../../Component/Header';
 import Heading from '../../Component/Heading';
 import { NavLink } from 'react-router-dom';
@@ -8,7 +9,26 @@ import Individual_ZeroBalance from '../../Component/Individual_ZeroBalance';
 import Individual_Quations from '../../Component/Individual_Quations';
 import Box from '../../Component/Box';
 import Footer from '../../Component/Footer';
+import Pragraph from '../../Component/Pragraph';
 function Businesses_Finance() {
+
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch("https://cms.verified.network/api/business?populate=*").then((data) => {
+      return data.json();
+  }).then((objectdata) => {
+      console.log(objectdata);
+      setData(objectdata.data.attributes);
+  })
+  }, []);
+
+  const hero = data === undefined ? {} : data.hero;
+  const pricing = data === undefined ? {}: data.pricing;
+  const faqs = data ? data.faqs : [];
+  const ctaCardDetails = data === undefined ? {} : data.ctaCardDetails;
+
   return (
     <div>
       <Header Header={<div className="header_color_skyblue header_height">
@@ -23,26 +43,25 @@ function Businesses_Finance() {
         </div>
         <div className='center margin_top'>
           <div className=''>
-            <h2 className='heading_2 font-weight'>A Financial Ecosystem.</h2>
-            <Heading className='heading font-weight font-size-60' heading="Built for Smart Businesses." />
-            {/* <h1 className='heading'>Built for the New Age Investor.</h1> */}
-            <h4 className="heading_4">Verified makes it easier for businesses to raise capital out intermediaries, across borders.</h4>
-            <h4 className="heading_4 margin_top">Create your Verified account today</h4>
-            <button className='login_button_color login'> Sign in </button>
-            <button className="login margin color-black">Explore</button>
+          <h2 className='heading_2 font-weight'>{hero.subheading}</h2>
+            <Heading className='heading font-weight font-size-60' heading={hero.heading} />
+            <h4 className="heading_4 margin_top">{hero.description}</h4>
+            <h4 className="heading_4 padding_top_40">{hero.pitch}</h4>
+          <a href =""> <button className='login_button_color login'> Sign in </button></a> 
+            <a href =""><button className="login margin color-black">Explore</button></a>
           </div>
         </div>
       </div>} />
       <Individual_Pages individual_Pages={
         <div className='Accounts-assets margin_left margin_right section_2'>
-          <div className='icon-images-flex pt'>
+          <div className='section_1 pt'>
           <Link to="/Businesses" className='NavLink color_grey'><img className='icon-images-hw margin_left_50' src="images/Account-icon.png" /></Link>
             <Link to="/BusinessesAssets"><img className='icon-images-hw' src="images/Assets-icon.png" /></Link>
             <Link to="/BusinessesDeposits"><img className='icon-images-hw' src="images/Deposits-icon.png" /></Link>
             <Link to="/BusinessesPayments"><img className='icon-images-hw' src="images/Payments-icon.png" /></Link>
             <Link to="/BusinessesFinance"><img className='icon-images-hw margin_right_50 margin' src="images/Investments-icon.png" /></Link>
           </div>
-          <div className='icon-images-flex margin-top-15'>
+          <div className='section_1 margin-top-15'>
             <div className='margin_left_50 Pages_style'><Link to="/Businesses" className='NavLink color_grey'> Account</Link></div>
             <div className='Pages_style'><Link to="/BusinessesAssets" className='NavLink color_grey'>Assets</Link></div>
             <div className='Pages_style'><Link to="/BusinessesDeposits" className='NavLink color_grey'>Deposits</Link></div>
@@ -57,16 +76,15 @@ function Businesses_Finance() {
 
       <div className='section_1 padding-top'>
         <div className='margin_left'>
-          {/* <img className='bussiness_accounts_img' src="images/bussiness_accounts.png" /> */}
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'> competitive Borrowing Rates</h2>
-          <p className="pragraph_1">Borrow money at competitive interest rates by selling private bonds across the globe.</p>
-          <p className="pragraph_1">Take advantage of selling to investors, who are interested in earning higher returns on their
-assets.
-</p>
-          <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+          <h2 className='heading font-weight font-size-40'> competitive Borrowing Rates</h2><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="pragraph_1 display_inline ml" pragraph="Borrow money at competitive interest rates by selling private bonds across the globe."/><br/><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="pragraph_1 display_inline ml" pragraph="Take advantage of selling to investors, who are interested in earning higher returns on their
+assets."/>
+
+          <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>
       </div>
 
@@ -74,12 +92,11 @@ assets.
 
       <div className='section_1 padding-top margin_top_100'>
         <div className='margin_right margin_left '>
-          <h2 className='heading font-weight font-size-40'> Raise capital For your Business</h2>
-          <p className="pragraph_1">Issue digital shares to investors across the world to raise capital.</p>
-          <p className="pragraph_1">Ensure regulation-compliant cross border investments, allotment of shares and bonds,
-and distribution of interest and dividends to investors.
-</p>
-          <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+          <h2 className='heading font-weight font-size-40'> Raise capital For your Business</h2><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Issue digital shares to investors across the world to raise capital."/><br/><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Ensure regulation-compliant cross border investments, allotment of shares and bonds,
+and distribution of interest and dividends to investors."/>
+          <h4 className='Learn-More_1 color_skyblue  NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>
 
         <div className='margin_right'>
@@ -94,18 +111,18 @@ and distribution of interest and dividends to investors.
           <img className='bussiness_accounts_img' src="images/bussiness_accounts.png" />
         </div>
 
-        <div className='margin_right margin_left'>
-          <h2 className='heading font-weight font-size-40'> Digital Credit Assessments</h2>
-          <p className="pragraph_1">Run credit assessments for your business using digital tools on the Verified Network to ensure an accurate credit rating. </p>
-          <p className="pragraph_1">Build trust with investors by providing the latest information about your business.</p>
-          <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+        <div className='margin_right margin_left margin_top'>
+          <h2 className='heading font-weight font-size-40'> Digital Credit Assessments</h2><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Run credit assessments for your business using digital tools on the Verified Network to ensure an accurate credit rating." /> <br/><br/>
+          <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Build trust with investors by providing the latest information about your business."/>
+          <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>
       </div>
       <Individual_ZeroBalance individual_ZeroBalance={
         <div className='Zero-balance-skyblue'>
           <div className='margin_left padding-top'>
-            <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>PRICING THAT'S SUPER TRANSPARENT</h3>
-            <h3 className='font-weight font-size-35 line-height-35 heading'>Zero Balance Account with No Hidden Fees</h3>
+          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
           </div>
           <div className='section_1 margin_left margin_right padding-top'>
             <div className='box_4 box-width box-height margin_top'>
@@ -115,9 +132,9 @@ and distribution of interest and dividends to investors.
                 <div className='Download-App margin border_skyblue'>Download App </div>
               </div>
               <div className='margin-top-15'>
-                <p className='pragraph_1 margin mr'>FREE account set up</p>
-                <p className='pragraph_1 margin mr'>KYC Approval fee is waived off with 10 invites to friends to family.</p>
-                <p className='pragraph_1 margin mr'>0.03% per year on assets in custody.</p>
+                <Pragraph className='margin mr' pragraph="FREE account set up"></Pragraph>
+                <Pragraph className='margin mr' pragraph="KYC Approval fee is waived off with 10 invites to friends to family."></Pragraph>
+                <Pragraph className='margin mr' pragraph="0.03% per year on assets in custody."></Pragraph>
               </div>
             </div>
             <div className='box_5 box_5_boxshadow box_5_skybluecolor box-width box-purple-height'>
@@ -127,10 +144,10 @@ and distribution of interest and dividends to investors.
                 <div className='Download-App margin border_skyblue'>Download App</div>
               </div>
               <div className='padding_top_20 '>
-                <p className='pragraph_1 margin color-white mr'>FREE peer to peer payments within the Verified Network.</p>
-                <p className='pragraph_1 color-white margin mr'>$15 card set up fee. $10 annual fee.</p>
-                <p className='pragraph_1 color-white margin mr'>0.3% on foreign exchange payments using cards.   </p>
-                <p className='pragraph_1 color-white margin mr'>0.3% on currency withdrawals from the Verified Network to your bank account.</p>
+                <Pragraph className='margin color-white mr' pragraph="FREE peer to peer payments within the Verified Network."></Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="$15 card set up fee. $10 annual fee."></Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="0.3% on foreign exchange payments using cards."></Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="0.3% on currency withdrawals from the Verified Network to your bank account."></Pragraph>
 
               </div>
             </div>
@@ -141,9 +158,9 @@ and distribution of interest and dividends to investors.
                 <div className='Download-App border_skyblue margin '>Download App </div>
               </div>
               <div className='margin-top-15 '>
-                <p className='pragraph_1 margin mr'>$100 for upto four Credit Assessments per year.</p>
-                <p className='pragraph_1 margin mr'>$100 for upto four Credit Assessments per year.</p>
-                <p className='pragraph_1 margin mr'>0.1% for registering existing securities for sale. Calculated on value of assets sold. </p>
+                <Pragraph className='margin mr' pragraph="$100 for upto four Credit Assessments per year."></Pragraph>
+                <Pragraph className='margin mr' pragraph="$100 for upto four Credit Assessments per year."></Pragraph>
+                <Pragraph className='margin mr' pragraph="0.1% for registering existing securities for sale. Calculated on value of assets sold."></Pragraph>
 
               </div>
             </div>
@@ -151,21 +168,23 @@ and distribution of interest and dividends to investors.
         </div>
       } />
 
-<div className='Asked-questions-color padding-top'>
+<div className='padding-top'>
 <Individual_Quations individual_Quations={<div>
           <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
-          <div className='margin_left margin_right'>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here<span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-          </div>
+          {faqs.map(faqs=>{
+          return<Individual_Quations individual_Quations={<div>
+        <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>
+          <div className='pl pt font-size-18 heading '>{faqs.question}</div>
+          <div><img className="Vector_pluse_img margin_top" src="images/Vector_pluse_icon.png" /></div>
+        </div>
+          </div>} />
+        }) }
         </div>} />
         </div>
 
         <Box Box={<div className='box box-height-330 margin_right margin_left Invest margin_top_100'>
-        {/* <h1 className='padding_top_60 font-size-40'>Invest in the Verified Network and earn a revenue share</h1> */}
-        <Heading className='padding_top_60 font-size-40' heading="Join 1000+ Businesses and Own the World of Decentralized Finance" />
-        <button className='Started-but'>Get started</button>
+        <Heading className='padding_top_60 font-size-40' heading={ctaCardDetails.content} />
+        <a href={ctaCardDetails.buttonCtaLink}><button className='Started-but'>{ctaCardDetails.buttonText}</button></a>
       </div>} />
       <Footer Footer={
         <div className="container margin_top_100">

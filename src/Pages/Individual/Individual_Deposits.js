@@ -9,6 +9,7 @@ import Box from '../../Component/Box';
 import Individual_ZeroBalance from '../../Component/Individual_ZeroBalance';
 import WalletBox from '../../Component/WalletBox';
 import Individual_Quations from '../../Component/Individual_Quations';
+import Pragraph from '../../Component/Pragraph';
 function Individual_Deposits() {
 
   const [data, setData] = useState();
@@ -28,6 +29,7 @@ function Individual_Deposits() {
   const pricing = data === undefined ? {}: data.pricing;
   const downloadcta = data === undefined ? {}:data.downloadcta;
   const ctaCardDetails = data === undefined ? {} : data.ctaCardDetails;
+  const faq = data ? data.faq : [];
  // console.log("ctaCardDetails", ctaCardDetails )
   //console.log("downloadcta", downloadcta)
   //console.log("pricing", pricing)
@@ -50,24 +52,24 @@ function Individual_Deposits() {
           <h2 className='heading_2 '>{hero.subheading}</h2>
             <Heading className='heading font-weight font-size-60' heading={hero.heading} />
             {/* <h1 className='heading'>Built for the New Age Investor.</h1> */}
-            <h4 className="heading_4">{hero.description}</h4>
-            <h4 className="heading_4 margin_top">{hero.pitch}</h4>
-            <a href={hero.playStoreLink}><img className="margin_top google-img" src="images/Group 82.png" /></a>
-             <a href={hero.appStoreLink}><img className="margin_top google-img ml" src="images/Group 83.png" /></a>
+            <h4 className="heading_4 margin_top">{hero.description}</h4>
+            <h4 className="heading_4 padding_top_40">{hero.pitch}</h4>
+            <a href={hero.playStoreLink}><img className=" google-img" src="images/Group 82.png" /></a>
+             <a href={hero.appStoreLink}><img className=" google-img ml" src="images/Group 83.png" /></a>
           </div>
         </div>
       </div>} />
 
       <Individual_Pages individual_Pages={
   <div className='Accounts-assets margin_left margin_right section_2'>
-        <div className='icon-images-flex pt'>
+        <div className='section_1 pt'>
           <Link to = "/Individuals"><img className='icon-images-hw margin_left_50' src = "images/Account-icon.png"/></Link>
           <Link to = "/IndividualAssets"><img className='icon-images-hw' src = "images/Assets-icon.png"/></Link>
         <Link to = "/IndividualDeposits"><img className='icon-images-hw' src = "images/Deposits-icon.png"/></Link>
           <Link to = "/IndividualPayments"><img className='icon-images-hw' src = "images/Payments-icon.png"/></Link>
           <Link to = "/IndividualInvestments"><img className='icon-images-hw margin_right_50 margin' src = "images/Investments-icon.png"/></Link>
         </div>
-        <div className='icon-images-flex margin-top-15'>
+        <div className='section_1 margin-top-15'>
          <div className='margin_left_50 Pages_style'><Link  className="color_grey NavLink" to = "/Individuals"> Account </Link></div>
           <div className='Pages_style'><Link to = "/IndividualAssets" className='NavLink color_grey'>Assets</Link></div>
           <div className='Pages_style'><Link to = "/IndividualDeposits" className='NavLink color_grey'>Deposits</Link></div>
@@ -86,14 +88,64 @@ function Individual_Deposits() {
           <img className='individual_deposits_img' src="images/individual_deposits.png" />
         </div>
 
-        <div className='margin_right margin_left'>
-          <h2 className='heading font-weight font-size-40'>Deposit in Stable CurrenciesSelf Custody of Assets</h2>
-          <p className="pragraph">Keep fiat currency safe into your Verified Network account.
-          Avoid currency depreciation and convert local fiat currency into a stable global currency at a lower cost.</p>
-          <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+        <div className='margin_right margin_left margin_top_60'>
+          <h2 className='heading font-weight font-size-40 '>Deposit in Stable Currencies</h2><br/>
+          <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className=" display_inline ml" pragraph="Keep fiat currency safe into your Verified Network account."></Pragraph><br/><br/>
+          <img className='Group_9_img ' src ="images/Group (9).png"/><Pragraph className=" display_inline ml " pragraph="Avoid currency depreciation and convert local fiat currency into a stable global currency at a lower cost."></Pragraph>
+        <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
         </div>
       </div>
 
+      <Individual_ZeroBalance individual_ZeroBalance={
+        <div className='Zero-balance-purple'>
+          <div className='margin_left padding-top'>
+          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            {/* <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
+            <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
+          </div>
+          <div className='section_1 margin_left margin_right padding-top'>
+            <div className='box_4 box-width box-height margin_top'>
+              <h2 className='font-weight-500  padding_top_60 center font-size-24 line-height-27 heading'>Account</h2>
+              <h4 className='heading_4 padding_top_20 margin mr'>For account creation, KYC and custody of assets</h4>
+              <div className=''>
+                <div className='Download-App margin '>Download App for <span className='color-parpule'>Android   ios</span> </div>
+              </div>
+              <div className='padding_top_20 margin_top'>
+                <Pragraph className=' margin mr' pragraph="FREE account set up"></Pragraph>
+                <Pragraph className='margin mr' pragraph="KYC Approval fee is waived off with 10 invites to friends to family."></Pragraph>
+                <Pragraph className='margin mr' pragraph="0.03% per year on assets in custody."></Pragraph>
+              </div>
+            </div>
+            <div className='box_5 box-width box-purple-height'>
+              <h2 className='font-weight-500  padding_top_60 center font-size-24 line-height-27 heading color-white'>Payments</h2>
+              <h4 className='heading_4 color-white margin padding_top_20 mr'>For payments and withdrawal of digital cash to your bank account.</h4>
+              <div className='margin_top'>
+                <div className='Download-App margin '>Download App for <span className='color-parpule'>Android   ios</span> </div>
+              </div>
+              <div className='padding_top_20 '>
+                <Pragraph className='margin color-white mr' pragraph="FREE peer to peer payments within the Verified Network."></Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="$15 card set up fee. $10 annual fee.">$15 card set up fee. $10 annual fee.</Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="0.3% on foreign exchange payments using cards.">   </Pragraph>
+                <Pragraph className='color-white margin mr' pragraph="0.3% on currency withdrawals from the Verified Network to your bank account."></Pragraph>
+
+              </div>
+            </div>
+            <div className='box_4 box-width box-height margin_top'>
+              <h2 className='font-weight-500  padding_top_60 center font-size-24 line-height-27 heading'>Investments</h2>
+              <h4 className='heading_4 padding_top_20 margin mr'>For registering existing assets for sale, and trading investments.</h4>
+              <div className='margin_top'>
+                <div className='Download-App margin '>Download App for <span className='color-parpule'>Android   ios</span> </div>
+              </div>
+              <div className='padding_top_20 margin_top'>
+                <Pragraph className='margin mr' pragraph ="0.1% for registering existing securities for sale. Calculated on value of assets sold. "></Pragraph>
+                <Pragraph className='margin mr' pragraph="0.1% on every investment brought and sold on the Verified Network."></Pragraph>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      } />
+{/* 
       <Individual_ZeroBalance className="" individual_ZeroBalance = {
   <div className='Zero-balance-purple'>
   <div className='margin_left padding-top margin_top_100'>
@@ -142,17 +194,20 @@ function Individual_Deposits() {
     </div>
   </div>
   </div>
-}/>
+}/> */}
 <div className='Asked-questions-color padding-top'>
 
 <Individual_Quations individual_Quations={
         <div>
           <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
-          <div className='margin_left margin_right'>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here<span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-            <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-          </div>
+          {faq.map(faq=>{
+          return<Individual_Quations individual_Quations={<div>
+        <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>
+          <div className='pl pt font-size-18 heading '>{faq.question}</div>
+          <div><img className="Vector_pluse_img margin_top" src="images/Vector_pluse_icon.png" /></div>
+        </div>
+          </div>} />
+        }) }
         </div>} />
   <WalletBox className="Latest-News" WalletBox={<div className='section_1 padding-top'>
           <div className='margin_left'>
@@ -172,8 +227,7 @@ function Individual_Deposits() {
 </div>
 
 <Box Box={<div className='box box-height-330 margin_right margin_left Invest margin_top_100'>
-        {/* <h1 className='padding_top_60 font-size-40'>Invest in the Verified Network and earn a revenue share</h1> */}
-        <Heading className='padding_top_60 font-size-40' heading={ctaCardDetails.content} />
+        <Heading className='padding_top_40 font-size-40 padding_right padding_left' heading={ctaCardDetails.content} />
         <a href={ctaCardDetails.buttonCtaNavLink}><button className='Started-but'>{ctaCardDetails.buttonText}</button></a>
        
       </div>} />

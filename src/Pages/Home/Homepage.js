@@ -60,10 +60,10 @@ function Homepage() {
                 <div className='section_1'>
                     <div className='margin_left'>
                         <Heading className="font-size-60" heading={hero.heading} />
-                        <Pragraph pragraph={hero.description} className="margin_top" />
+                        <Pragraph pragraph={hero.description} className="margin_top pragraph_hw" />
                         <h4 className="heading_4">{hero.pitch}</h4>
-                        <a href={hero.playStoreLink}><img className="margin_top google-img" src="images/Group 82.png" /></a>
-                        <a href={hero.appStoreLink}><img className="margin_top google-img ml" src="images/Group 83.png" /></a>
+                        <a href={hero.playStoreLink}><img className="google-img" src="images/Group 82.png" /></a>
+                        <a href={hero.appStoreLink}><img className=" google-img ml" src="images/Group 83.png" /></a>
                     </div>
                     <div className='margin_right'>
                         <img className="homepage_img" src="images/homepage-Banner.png" />
@@ -73,14 +73,12 @@ function Homepage() {
 
             <div className='section_1 padding-top'>
                 <div className='margin_left'>
-                    {/* <h1 className='heading_1  width'>{UsecaseHeading}</h1> */}
                     <Heading heading={UsecaseHeading} className='heading_1 width' />
                     <h2 className='anymore font-size-50 margin_top'>Not anymore.</h2>
                 </div>
                 <div className='margin_right padding_top_60'>
                     <img src="images/Rectangle.png" />
-                    <Pragraph pragraph={UsecaseParagraph} className="margin_top" />
-                    {/* <p className='pragraph margin_top'>Banks lock you in a silo when they offer their accounts, payments, cards, insurance and loans products without access to choice of products by other financial service providers. Not any more.</p> */}
+                    <Pragraph pragraph={UsecaseParagraph} className="margin_top pragraph_hw" />
                 </div>
             </div>
 
@@ -101,8 +99,7 @@ function Homepage() {
                     <img className='margin_left' src="images/Group 161.png" />
                     <div className='font-size-40 margin_top margin_left'>For <span className='color-parpule'>{Individuals.title}</span></div>
                     <h4 className='heading_4 margin_left'>{Individuals.subtitle}</h4>
-                    <Pragraph pragraph={Individuals.description} className="margin_left" />
-                    {/* <p className='pragraph margin_left'>{Individuals.description}</p> */}
+                    <Pragraph pragraph={Individuals.description} className="margin_left pragraph_hw" />
                     <a className='NavLink' href={Individuals.linkUrl}><h4 className='Learn-More_1 color-parpule margin_left NavLink'>Learn More <span><img src="images/Group (3).png" /></span></h4></a>
                 </div>
             </div>
@@ -113,7 +110,7 @@ function Homepage() {
                     <div className='font-size-40 margin_top'>For <span className='color-green'>{Businesses.title}</span></div>
                     <h4 className='heading_4'>{Businesses.subtitle}</h4>
                     {/* <p className='pragraph'>{Businesses.description}</p> */}
-                    <Pragraph pragraph={Businesses.description} />
+                    <Pragraph pragraph={Businesses.description}  className="pragraph_hw"/>
                     <a className='NavLink' href={Businesses.linkUrl}><h4 className='Learn-More_1 color-green'>Learn More <span><img src="images/Group (2).png" /></span></h4></a>
                 </div>
                 <div className='margin_right'>
@@ -130,7 +127,7 @@ function Homepage() {
                     <div className='font-size-40 margin_top'>For <span className='color-blue'>{Service_Providers.title}</span></div>
                     <h4 className='heading_4'>{Service_Providers.subtitle}</h4>
                     {/* <p className='pragraph'>{Service_Providers.description}</p> */}
-                    <Pragraph pragraph={Service_Providers.description} />
+                    <Pragraph pragraph={Service_Providers.description} className="pragraph_hw"/>
                     <a className='NavLink' href={Businesses.linkUrl}><h4 className='Learn-More_1 color-blue'>Learn More<span><img src="images/Group (1).png" /></span></h4></a>
                 </div>
             </div>
@@ -145,7 +142,7 @@ function Homepage() {
                     <div className='margin_right padding_top_60'>
                         <h2 className='heading_2'>Finimmo</h2>
                         {/* <p className='pragraph'>Finimmo supports the issuance of tokenized notes securitized by assets. Based in Luxembourg, Finimmo manages in excess of EUR 1 billion in asset backed securities</p> */}
-                        <Pragraph pragraph="Finimmo supports the issuance of tokenized notes securitized by assets. Based in Luxembourg, Finimmo manages in excess of EUR 1 billion in asset backed securities" />
+                        <Pragraph className="pragraph_hw" pragraph="Finimmo supports the issuance of tokenized notes securitized by assets. Based in Luxembourg, Finimmo manages in excess of EUR 1 billion in asset backed securities" />
                         <img src="images/Group 17353.png" />
                     </div>
                 </div>
@@ -153,19 +150,9 @@ function Homepage() {
 
             <div className='section_1 padding-top'>
                 <div className='margin_left'>
-                    {/* <div className='padding-top padding-top heading_1 width margin_top'> {FeaturesTitle} <span className='color-blue'></span></div> */}
                     <Heading heading={FeaturesTitle} className='padding-top padding-top heading_1 width margin_top' />
                     <p className='heading_4 width margin_top'>{FeaturesParagraph}</p>
                 </div>
-                {/* {FeatureCard.map(FeatureCard => {
-                        return <div className='margin_right'>
-                    <div className='box_1 background-color-green'>
-                        <h3 className='margin margin_top padding_top_20'>{FeatureCard.title}</h3>
-                        <p className="margin">{FeatureCard.description}</p>
-                    </div>
-                   
-                </div>
-                    })} */}
 
                 <div className='margin_right'>
                     <div className='box_1 background-color-green'>
@@ -191,16 +178,10 @@ function Homepage() {
                     <img className='finance-img' src="images/finance.png" />
                 </div>
                 <div className='margin_right'>
-
-                    {/* <div className='Disrupting width'>{AboutWork.title}<span className='color-blue'></span>
-                    </div> */}
                     <Heading heading={AboutWork.title} className='Disrupting width' />
-                    <Pragraph pragraph={AboutWork.work1} className="margin_top" />
-                    <Pragraph pragraph={AboutWork.work2} className="" />
-                    <Pragraph pragraph={AboutWork.work3} className="" />
-                    {/* <p className='pragraph_1 margin_top'>{AboutWork.work1}</p>
-                    <p className='pragraph_1 margin_top'>{AboutWork.work2}</p>
-                    <p className='pragraph_1 margin_top'>{AboutWork.work3}</p> */}
+                    <Pragraph pragraph={AboutWork.work1} className="margin_top " /><br/>
+                   <Pragraph pragraph={AboutWork.work2} className=""/><br/>
+                   <Pragraph pragraph={AboutWork.work3} className=""/>
 
                 </div>
             </div>
@@ -240,7 +221,7 @@ function Homepage() {
             </div>
 
             <Box Box={<div className='box box-height-330 margin_right margin_left Invest margin_top_100'>
-                <Heading heading={ctaCardDetails.content} className='padding_top_60 font-size-40' />
+                <Heading heading={ctaCardDetails.content} className='padding_top_40 font-size-40 padding_right padding_left' />
 
                 <a href={ctaCardDetails.buttonCtaLink}><button className='Started-but'>{ctaCardDetails.buttonText}</button></a>
             </div>} />

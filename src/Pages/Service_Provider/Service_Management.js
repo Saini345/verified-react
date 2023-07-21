@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../../Component/Header';
 import Heading from '../../Component/Heading';
 import { NavLink } from 'react-router-dom';
@@ -8,12 +8,37 @@ import { Link } from 'react-router-dom';
 import Individual_Quations from '../../Component/Individual_Quations';
 import Box from '../../Component/Box';
 import Footer from '../../Component/Footer';
+import Pragraph from '../../Component/Pragraph';
 function Service_Management() {
+
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch("https://cms.verified.network/api/service?populate=*").then((data) => {
+      return data.json();
+  }).then((objectdata) => {
+      console.log(objectdata);
+      setData(objectdata.data.attributes);
+  })
+  }, []);
+
+  const hero = data === undefined ? {} : data.hero;
+  const pricing = data === undefined ? {}: data.pricing;
+  const downloadcta = data === undefined ? {}:data.downloadcta;
+  const CtaCardDetails = data === undefined ? {} : data.CtaCardDetails;
+  const faqs = data ? data.faqs : [];
+  //console.log("ctaCardDetails", ctaCardDetails )
+  //console.log("downloadcta", downloadcta)
+  //console.log("pricing", pricing)
+    // console.log("hero", hero);
+
+
   return (
     <div>
       <Header Header={<div className="header_color_grey header_height">
         <div class="navbar">
-          <a><img className="margin_left Verified_img" src="images/Verified.png" /></a>
+          <a href = "/"><img className="margin_left Verified_img" src="images/Verified.png" /></a>
           <ul className="li-list">
             <li><NavLink to="/Individuals" className="NavLink color-black">Individuals</NavLink></li>
             <li><NavLink to="/Businesses" className="NavLink color-black">Businesses</NavLink></li>
@@ -23,26 +48,25 @@ function Service_Management() {
         </div>
         <div className='center margin_top'>
           <div className=''>
-            <h2 className='heading_2 '>Connect Your Service</h2>
-            <Heading className='heading font-weight font-size-60' heading=" Supercharge your Offering." />
-            {/* <h1 className='heading'>Built for the New Age Investor.</h1> */}
-            <h4 className="heading_4"> Supercharge your Offering.  </h4>
-            <h4 className="heading_4 margin_top"> Supercharge your Offering.  </h4>
-            <button className='login_button_color login'> Sign in </button>
-            <button className="login margin color-black border_color_blue">Explore</button>
+          <h2 className='heading_2 '>{hero.subheading}</h2>
+            <Heading className='heading font-weight font-size-60' heading={hero.heading} />
+            <h4 className="heading_4 margin_top">{hero.description}</h4>
+            <h4 className="heading_4 padding_top_40">{hero.pitch}</h4>
+            <a href=""><button className='login_button_color login'> Sign in </button></a>
+           <a href=""><button className="login margin color-black border_color_blue">Explore</button></a>
           </div>
         </div>
       </div>} />
         <Individual_Pages individual_Pages={
           <div className='Accounts-assets margin_left margin_right section_2'>
-            <div className='icon-images-flex padding_t'>
+            <div className='section_1 padding_t'>
               <Link to="/Service Providers"><img className='icon-images-hw margin_left_50 margin-top-15' src='images/Group (7)_service.png' /></Link>
               <Link to="/ServiceManagement"><img className='icon-images-hw' src='images/Vector (4)_service.png' /></Link>
               <Link to="/ServiceManagements"><img className='icon-images-hw' src='images/Vector (5)_service.png' /></Link>
               <Link to="/ServicePayments"><img className='icon-images-hw' src='images/Group (8)_service.png' /></Link>
               <Link to="/ServiceNetworkOperator"><img className='icon-images-hw margin_right_50 margin' src='images/Vector (6)_service.png' /></Link>
             </div>
-            <div className='icon-images-flex '>
+            <div className='section_1 '>
               <div className='margin_left_50 Pages_style color_grey'><Link to="/Service Providers" className='NavLink color_grey'>Asset Origination</Link> </div>
               <div className='Pages_style'><Link to="/ServiceManagement" className='NavLink color_grey'>Asset Management</Link></div>
               <div className='Pages_style'><Link to="/ServiceManagements" className='NavLink color_grey'>Asset Servicing</Link></div>
@@ -62,45 +86,46 @@ function Service_Management() {
             <img className='Group_17513_service_img' src="images/Group 17513_service.png" />
           </div>
 
-          <div className='margin_right margin_left margin_top_100'>
-            <h2 className='heading font-weight font-size-40'> Asset Management</h2>
-            <p className="pragraph_1">Become regulated asset managers and handle the assets of Verified Network account holders.</p>
-            <p className="pragraph_1">Take charge of investments in underlying shares and bonds issued by businesses where investments are made.</p>
-            <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+          <div className='margin_right margin_left margin_top'>
+            <h2 className='heading font-weight font-size-40'> Asset Management</h2><br/>
+            <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Become regulated asset managers and handle the assets of Verified Network account holders."></Pragraph><br/><br/>
+            <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Take charge of investments in underlying shares and bonds issued by businesses where investments are made."></Pragraph>
+            <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
           </div>
         </div>
 
         <div className='section_1 padding-top'>
 
-          <div className='margin_right margin_left margin_top_100'>
-            <h2 className='heading font-weight font-size-40'> Brokerage For Private Investments</h2>
-            <p className="pragraph_1">Provide access to a select range of private investment assets issued on the Verified Network for your asset management and brokerage clients.</p>
-            <p className="pragraph_1">Increase your clients’ returns by enabling access to a large number of underlying assets.</p>
-            <h4 className='Learn-More_1 color-parpule margin_left NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+          <div className='margin_right margin_left margin_top'>
+            <h2 className='heading font-weight font-size-40'> Brokerage For Private Investments</h2><br/>
+            <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Provide access to a select range of private investment assets issued on the Verified Network for your asset management and brokerage clients."></Pragraph><br/><br/>
+            <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Increase your clients’ returns by enabling access to a large number of underlying assets."></Pragraph>
+            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
           </div>
           <div className='margin_right'>
             <img className='Group_17513_service_img' src="images/Group 17515_service.png" />
           </div>
         </div>
 
-        <div className='Asked-questions-color Asked-questions margin_top_100 padding_top_60'>
-          <Individual_Quations individual_Quations={<div>
-            <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
-            <div className='margin_left margin_right'>
-              <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here<span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-              <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-              <div className='box-shadow div-height div-width pl pt font-size-18 heading margin_top border-radius-20'>Frequently Asked Question goes here <span><img className="Vector_pluse_img" src="images/Vector_pluse_icon.png" /></span></div>
-            </div>
-          </div>} />
-        </div>
+        <div className='Asked-questions-color margin_top_100 padding_top_60'>
+        <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
 
-        <Box Box={<div className='box box-height-330 margin_right margin_left Invest margin_top_100'>
-          {/* <h1 className='padding_top_60 font-size-40'>Invest in the Verified Network and earn a revenue share</h1> */}
-          <h4 className='font-size-18 font-weight-400 heading padding_top_60'>What are you waiting for?</h4>
-          <Heading className='padding_t font-size-40' heading="Get started with Verified Networks today " />
-          <button className='Started-but margin_top'>Get started</button>
-          <button className="margin_top margin color-black border_color_blue Contact_Sales_btn ">Contact Sales</button>
+       { faqs.map( faqs=>{
+        return<Individual_Quations individual_Quations={<div>
+          <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>
+            <div className='pl pt font-size-18 heading '>{faqs.question}</div>
+            <div><img className="Vector_pluse_img margin_top" src="images/Vector_pluse_icon.png" /></div>
+          </div>
         </div>} />
+       })}
+      </div>
+
+<Box Box={<div className='box box-height-330 margin_right margin_left Invest margin_top_100'>
+        <h4 className='font-size-18 font-weight-400 heading padding_top_60'>{CtaCardDetails.subHeading}</h4>
+        <Heading className='padding_t font-size-40' heading={CtaCardDetails.heading} />
+        <a href ={CtaCardDetails.primaryButtonLink}><button className='Started-but margin_top'>{CtaCardDetails.primaryButtonText}</button></a>
+        <a href={CtaCardDetails.secondaryButtonLink}><button className="margin_top margin color-black border_color_blue Contact_Sales_btn ">{CtaCardDetails.secondaryButtonText}</button></a>
+      </div>} />
         <Footer Footer={
           <div className="container margin_top_100">
 

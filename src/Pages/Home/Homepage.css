@@ -42,8 +42,6 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #8F8F98;
-    width: 459px;
-    height: 120px;
 }
 
 .heading {
@@ -103,7 +101,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #8F8F98;
+    color: #8F8F98; 
 }
 
 .table-th {
@@ -181,7 +179,7 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #FFFFFF;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .button {
@@ -254,6 +252,13 @@ ul li {
     color: #4E59E7;
 }
 
+/* .sticky{
+    box-shadow: 0px 0px 50px 0px rgba(78, 89, 231, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} */
+
 .Accounts-assets {
     height: 107px;
     border-radius: 20px;
@@ -261,6 +266,11 @@ ul li {
     margin-top: 150px;
     /* display: flex;
     justify-content: space-between; */
+}
+
+.pragraph_hw{
+    width: 459px;
+    height: 120px;
 }
 
 .section_1 {
@@ -278,6 +288,10 @@ ul li {
     height: 492px;
 }
 
+.Group_9_img{
+    width: 27px;
+    height: 27px;
+}
 .start-verification-img {
     width: 461px;
     height: 471px;
@@ -420,7 +434,8 @@ ul li {
 .Vector_pluse_img {
     width: 20px;
     height: 20px;
-    margin-left: 70%;
+    /* margin-left: 70%; */
+    margin-right:30px;
 }
 
 .bussiness_accounts_img {
@@ -448,6 +463,11 @@ ul li {
     height: 26.57px;
 }
 
+.arow_hw{
+    width: 16.25px;
+    height: 11.52px;
+}
+
 .Asked-questions {
     Height: 500px;
 }
@@ -463,6 +483,10 @@ ul li {
 .width {
     width: 370px;
 }
+
+/* .width_459{
+    width: 459px;
+} */
 
 .box-width {
     width: 316px;
@@ -551,6 +575,10 @@ ul li {
     height: 900px;
 }
 
+.color_skyblue{
+    color: rgba(8, 192, 181, 1);
+
+}
 .color-black {
     color: #000000;
 }
@@ -593,9 +621,9 @@ ul li {
 
 .margin_left {
     margin-left: 90px;
-}
+} 
 
-.margin {
+.margin{
     margin-left: 30px;
 }
 
@@ -603,7 +631,11 @@ ul li {
     margin-top: 25px;
 }
 
-.margin-top-15 {
+  .margin_top_60{
+  margin-top: 60px;
+}  
+
+.margin-top-15{
     margin-top: 15px;
 }
 
@@ -627,12 +659,24 @@ ul li {
     padding-top: 20px;
 }
 
+.padding_top_40 {
+    padding-top: 40px;
+} 
+
 .padding_top_60 {
     padding-top: 60px;
 }
 
-.pl {
+.pl{
     padding-left: 30px;
+}
+
+.padding_left{
+    padding-left: 20%;
+}
+
+.padding_right{
+    padding-right: 20%;
 }
 
 .pt {
@@ -724,4 +768,8 @@ ul li {
 
 .NavLink {
     text-decoration: none;
+}
+
+.display_inline{
+    display:inline;
 }
