@@ -71,7 +71,8 @@ function Businesses_Deposit() {
         </div>
       } />
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="In a World of Uncertainties, Be Rock Solid." />
+        <h2 className='padding-top margin_left font-size-50 font-weight_400'>In a World of Uncertainties,<span className='font-weight color_skyblue'> Be Rock Solid. </span></h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="In a World of Uncertainties, Be Rock Solid." /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -80,7 +81,7 @@ function Businesses_Deposit() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'> Deposit in Stable Currencies</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'> Deposit in <span className='font-weight'>Stable Currencies</span></h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Keep your money safe from economic fluctuations through fiat currencies in your Verified Network account – that lets you convert local currencies into stable global currencies at competitive rates."/>
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>

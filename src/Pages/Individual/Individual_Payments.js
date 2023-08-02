@@ -80,8 +80,9 @@ function Individual_Payments() {
 }/>
 
      <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Payments to All Corners of the World. 
-The Easy Way."/>
+      <h2 className="font-weight_400 padding-top margin_left font-size-50 margin_right"><span className='font-weight color-parpule'>Payments to All Corners </span> of the World. The Easy Way.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Payments to All Corners of the World. 
+The Easy Way."/> */}
       </div>
 
       <div className='section_1 padding-top '>
@@ -90,7 +91,7 @@ The Easy Way."/>
         </div>
 
         <div className='margin_right margin_left margin_top'>
-          <h2 className='heading font-weight font-size-40'> Multi-Country Cards</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Multi-Country</span> Cards</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Make card payments from your blockchain account on the Verified Network."/> <br/><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Pay for shopping, travel, entertainment and more with a standard Visa debit card." />
           <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
@@ -99,7 +100,7 @@ The Easy Way."/>
 
       <div className='section_1 padding-top margin_top_100'>
         <div className='margin_right margin_left margin_top'>
-          <h2 className='heading font-weight font-size-40'> Peer to Peer Payments</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Peer to Peer</span> Payments</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Transfer money to friends and family across the world for free."/><br/><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Stop paying hefty commissions for foreign exchange conversions and withdrawals."/>
           <h4 className='Learn-More_1 color-parpule  NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
@@ -114,8 +115,8 @@ The Easy Way."/>
       <Individual_ZeroBalance individual_ZeroBalance={
         <div className='Zero-balance-purple'>
           <div className='margin_left padding-top'>
-          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
-            {/* <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
+          <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            {/* <h3 className=' font-weight_400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
             <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
           </div>
           <div className='section_1 margin_left margin_right padding-top'>
@@ -163,7 +164,7 @@ The Easy Way."/>
       {/* <Individual_ZeroBalance className="" individual_ZeroBalance = {
   <div className='Zero-balance-purple'>
   <div className='margin_left padding-top margin_top'>
-  <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+  <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
    <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
   </div>
   <div className='section_1 margin_left margin_right padding-top'>
@@ -212,7 +213,7 @@ The Easy Way."/>
 
 <Individual_Quations individual_Quations={
         <div>
-          <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
+          <div><h2 className='center heading font-weight_400 '>Frequently Asked Questions</h2></div>
           {faq.map(faq=>{
           return<Individual_Quations individual_Quations={<div>
         <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>

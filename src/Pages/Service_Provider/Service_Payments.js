@@ -75,8 +75,9 @@ function Service_Payments() {
         } />
 
         <div>
-          <Heading className="padding-top margin_left font-size-50" heading="Expand your Offering with Payments 
-you can Trust." />
+          <h2 className="padding-top margin_left font-size-50 font-weight_400">Expand your Offering with <span className='font-weight color-blue'>Payments </span>you can Trust.</h2>
+          {/* <Heading className="padding-top margin_left font-size-50" heading="Expand your Offering with Payments 
+you can Trust." /> */}
         </div>
 
         <div className='section_1 padding-top'>
@@ -85,20 +86,20 @@ you can Trust." />
           </div>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Digital Payments</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Digital</span>  Payments</h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Be immune to economic instability by accepting local fiat currency paid by account holders as regulated payment institution."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Be immune to economic instability by accepting local fiat currency paid by account holders as regulated payment institution."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
         </div>
 
         <div className='section_1 padding-top'>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Payment Acceptance</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'> Payment</span> Acceptance</h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Accept digital cash tokens transfers from account holders in multiple foreign currencies."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Pay out local fiat currency to beneficiaries in exchange for regulated payment institution."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
           <div className='margin_right'>
             <img className='Group_17489_service_img' src="images/Group 17489_service.png" />

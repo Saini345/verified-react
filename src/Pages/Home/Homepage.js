@@ -51,9 +51,9 @@ function Homepage() {
                 <div class="navbar">
                     <a><img className="margin_left Verified_img" src="images/Verified.png" /></a>
                     <ul className="li-list">
-                        <li><NavLink to ="/Individuals" className= "NavLink color-black">Individuals</NavLink></li>
-                        <li><NavLink to ="/Businesses" className= "NavLink color-black">Businesses</NavLink></li>
-                        <li><NavLink to ="/Service Providers" className= "NavLink color-black">Service Providers</NavLink></li>
+                        <li><NavLink to="/Individuals" className="NavLink color-black">Individuals</NavLink></li>
+                        <li><NavLink to="/Businesses" className="NavLink color-black">Businesses</NavLink></li>
+                        <li><NavLink to="/Service Providers" className="NavLink color-black">Service Providers</NavLink></li>
                         <li><button className="margin_right login login_button_color">Login</button></li>
                     </ul>
                 </div>
@@ -110,7 +110,7 @@ function Homepage() {
                     <div className='font-size-40 margin_top'>For <span className='color-green'>{Businesses.title}</span></div>
                     <h4 className='heading_4'>{Businesses.subtitle}</h4>
                     {/* <p className='pragraph'>{Businesses.description}</p> */}
-                    <Pragraph pragraph={Businesses.description}  className="pragraph_hw"/>
+                    <Pragraph pragraph={Businesses.description} className="pragraph_hw" />
                     <a className='NavLink' href={Businesses.linkUrl}><h4 className='Learn-More_1 color-green'>Learn More <span><img src="images/Group (2).png" /></span></h4></a>
                 </div>
                 <div className='margin_right'>
@@ -127,7 +127,7 @@ function Homepage() {
                     <div className='font-size-40 margin_top'>For <span className='color-blue'>{Service_Providers.title}</span></div>
                     <h4 className='heading_4'>{Service_Providers.subtitle}</h4>
                     {/* <p className='pragraph'>{Service_Providers.description}</p> */}
-                    <Pragraph pragraph={Service_Providers.description} className="pragraph_hw"/>
+                    <Pragraph pragraph={Service_Providers.description} className="pragraph_hw" />
                     <a className='NavLink' href={Businesses.linkUrl}><h4 className='Learn-More_1 color-blue'>Learn More<span><img src="images/Group (1).png" /></span></h4></a>
                 </div>
             </div>
@@ -177,11 +177,11 @@ function Homepage() {
                 <div className='margin_left'>
                     <img className='finance-img' src="images/finance.png" />
                 </div>
-                <div className='margin_right'>
-                    <Heading heading={AboutWork.title} className='Disrupting width' />
-                    <Pragraph pragraph={AboutWork.work1} className="margin_top " /><br/>
-                   <Pragraph pragraph={AboutWork.work2} className=""/><br/>
-                   <Pragraph pragraph={AboutWork.work3} className=""/>
+                <div className='margin_right margin_top'>
+                    <Heading heading={AboutWork.title} className='Disrupting width ' /><br />
+                    <img className='Group_9_img' src="images/Group 278.png" /> <Pragraph pragraph={AboutWork.work1} className="margin_top display_inline ml" /><br /><br />
+                    <img className='Group_9_img' src="images/Group 278.png" /> <Pragraph pragraph={AboutWork.work2} className="display_inline ml" /><br /><br />
+                    <img className='Group_9_img' src="images/Group 278.png" /><Pragraph pragraph={AboutWork.work3} className="display_inline ml" />
 
                 </div>
             </div>

@@ -70,8 +70,9 @@ function Businesses_Payments() {
         </div>
       } />
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Payments  - Reimagined for Value, 
-Not for Fees." />
+        <h2  className="padding-top margin_left font-size-50 font-weight_400"><span className='font-weight color_skyblue'>Payments</span> - Reimagined for Value, Not for Fees.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Payments  - Reimagined for Value, 
+Not for Fees." /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -80,7 +81,7 @@ Not for Fees." />
         </div>
 
         <div className='margin_right margin_left margin_top'>
-          <h2 className='heading font-weight font-size-40'> Multi-Country Cards</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'> <span className='font-weight'>Multi-Country</span> Cards</h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Pay expenses from your Verified blockchain account in a click without foreign transaction fees in 30+ countries."/><br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Provide Visa debit cards to employees and track your team in real time with controlled spending limits."/> 
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
@@ -89,7 +90,7 @@ Not for Fees." />
       <div className='section_1'>
 
         <div className='margin_right margin_left margin_top'>
-          <h2 className='heading font-weight font-size-40 width_470'> Employee and Supplier Payments</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40 width_470'> Employee and Supplier <span className='font-weight'> Payments</span></h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className=" display_inline ml" pragraph="Save time and effort while transferring money to employees and suppliers across the world for free."/><br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className=" display_inline ml" pragraph="Take the expense out of expenses and stop paying hefty commissions on foreign exchange conversions and withdrawals."/> 
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>

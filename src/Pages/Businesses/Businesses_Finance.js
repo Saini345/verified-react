@@ -71,7 +71,8 @@ function Businesses_Finance() {
         </div>
       } />
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Keep Investors Informed. And Win Their Confidence." />
+        <h2 className="padding-top margin_left margin_right font-size-50 font-weight_400"><span className='font-weight color_skyblue'>Keep Investors</span> Informed. And Win Their Confidence.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Keep Investors Informed. And Win Their Confidence." /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -79,7 +80,7 @@ function Businesses_Finance() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'> competitive Borrowing Rates</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'> competitive</span>  Borrowing Rates</h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="pragraph_1 display_inline ml" pragraph="Borrow money at competitive interest rates by selling private bonds across the globe."/><br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="pragraph_1 display_inline ml" pragraph="Take advantage of selling to investors, who are interested in earning higher returns on their
 assets."/>
@@ -92,7 +93,7 @@ assets."/>
 
       <div className='section_1 padding-top margin_top_100'>
         <div className='margin_right margin_left '>
-          <h2 className='heading font-weight font-size-40'> Raise capital For your Business</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'> <span className='font-weight'>Raise capital</span> For your Business</h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Issue digital shares to investors across the world to raise capital."/><br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Ensure regulation-compliant cross border investments, allotment of shares and bonds,
 and distribution of interest and dividends to investors."/>
@@ -112,7 +113,7 @@ and distribution of interest and dividends to investors."/>
         </div>
 
         <div className='margin_right margin_left margin_top'>
-          <h2 className='heading font-weight font-size-40'> Digital Credit Assessments</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'> <span className='font-weight'>Digital Credit </span>Assessments</h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Run credit assessments for your business using digital tools on the Verified Network to ensure an accurate credit rating." /> <br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Build trust with investors by providing the latest information about your business."/>
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>

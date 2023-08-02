@@ -76,7 +76,8 @@ function Service_Network_Operator() {
         } />
 
         <div>
-          <Heading className="padding-top margin_left font-size-50" heading="Promote Democratic Access to Finance." />
+          <h2 className="padding-top margin_left font-size-50 font-weight_400">Promote <span className='font-weight color-blue'>Democratic Access</span> to Finance.</h2>
+          {/* <Heading className="padding-top margin_left font-size-50" heading="Promote Democratic Access to Finance." /> */}
         </div>
 
         <div className='section_1 padding-top'>
@@ -84,10 +85,10 @@ function Service_Network_Operator() {
             <img className='Group_17520_service_img' src="images/Group 17520_service.png"/>
           </div>
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Decentralise Finance</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'> <span className='font-weight'>Decentralise</span> Finance</h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Hosting on the Verified Network infrastructure accelerates decentralisation and helps democratise access to financial products and services."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Earn a technology service fee by hosting a blockchain node for the Verified Network."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
         </div>
 

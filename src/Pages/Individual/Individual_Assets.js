@@ -78,7 +78,8 @@ function Individual_Assets() {
 }/>
 
      <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Secure Assets in your Verified Account."/>
+     <h2 className='padding-top margin_left font-size-50 font-weight_400'> <span className='color-parpule font-weight'>Secure Assets</span> in your Verified Account.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Secure Assets in your Verified Account."/> */}
       </div>
 
       <div className='section_1 padding-top '>
@@ -87,7 +88,7 @@ function Individual_Assets() {
         </div>
 
         <div className='margin_right margin_left margin_top_60'>
-          <h2 className='heading font-weight font-size-40'> Self Custody of Assets</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'> <span className='font-weight'>Self Custody</span> of Assets</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className=" display_inline ml" pragraph="Stop paying high fees to banks for custody of your assets. Keep your assets secure with Verified self-custody. "/>
           <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
         </div>
@@ -96,8 +97,8 @@ function Individual_Assets() {
       <Individual_ZeroBalance individual_ZeroBalance={
         <div className='Zero-balance-purple'>
           <div className='margin_left padding-top'>
-          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
-            {/* <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
+          <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            {/* <h3 className=' font-weight_400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
             <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
           </div>
           <div className='section_1 margin_left margin_right padding-top'>
@@ -147,7 +148,7 @@ function Individual_Assets() {
 
 <Individual_Quations individual_Quations={
         <div>
-          <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
+          <div><h2 className='center heading font-weight_400 '>Frequently Asked Questions</h2></div>
           {faq.map(faq=>{
           return<Individual_Quations individual_Quations={<div>
         <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>

@@ -80,7 +80,8 @@ function Individual_Deposits() {
 }/>
 
      <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Maximize your Money’s Worth."/>
+      <h2 className="font-weight_400 padding-top margin_left font-size-50"><span className='font-weight color-parpule'>Maximize</span> your Money’s Worth.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Maximize your Money’s Worth."/> */}
       </div>
 
       <div className='section_1 padding-top '>
@@ -89,7 +90,7 @@ function Individual_Deposits() {
         </div>
 
         <div className='margin_right margin_left margin_top_60'>
-          <h2 className='heading font-weight font-size-40 '>Deposit in Stable Currencies</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40 '>Deposit in <span className='font-weight'>Stable Currencies</span></h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className=" display_inline ml" pragraph="Keep fiat currency safe into your Verified Network account."></Pragraph><br/><br/>
           <img className='Group_9_img ' src ="images/Group (9).png"/><Pragraph className=" display_inline ml " pragraph="Avoid currency depreciation and convert local fiat currency into a stable global currency at a lower cost."></Pragraph>
         <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
@@ -99,8 +100,8 @@ function Individual_Deposits() {
       <Individual_ZeroBalance individual_ZeroBalance={
         <div className='Zero-balance-purple'>
           <div className='margin_left padding-top'>
-          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
-            {/* <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
+          <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            {/* <h3 className=' font-weight_400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
             <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
           </div>
           <div className='section_1 margin_left margin_right padding-top'>
@@ -149,7 +150,7 @@ function Individual_Deposits() {
       <Individual_ZeroBalance className="" individual_ZeroBalance = {
   <div className='Zero-balance-purple'>
   <div className='margin_left padding-top margin_top_100'>
-  <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+  <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
   
    <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
   </div>
@@ -199,7 +200,7 @@ function Individual_Deposits() {
 
 <Individual_Quations individual_Quations={
         <div>
-          <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
+          <div><h2 className='center heading font-weight_400 '>Frequently Asked Questions</h2></div>
           {faq.map(faq=>{
           return<Individual_Quations individual_Quations={<div>
         <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>

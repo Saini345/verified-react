@@ -78,7 +78,8 @@ function Service_Management() {
         } />
 
         <div>
-          <Heading className="padding-top margin_left font-size-50" heading="Manage Capital, and Maintain High Asset Quality.  " />
+          <h2 className="padding-top margin_left font-size-50">Manage <span className='font-weight color-blue'>Capital,</span> and Maintain High <span className='font-weight color-blue'>Asset</span> Quality.</h2>
+          {/* <Heading className="padding-top margin_left font-size-50" heading="Manage Capital, and Maintain High Asset Quality.  " /> */}
         </div>
 
         <div className='section_1 padding-top'>
@@ -87,20 +88,20 @@ function Service_Management() {
           </div>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Asset Management</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'> Asset <span className='font-weight'>Management</span></h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Become regulated asset managers and handle the assets of Verified Network account holders."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Take charge of investments in underlying shares and bonds issued by businesses where investments are made."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue NavLink margin_top'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
         </div>
 
         <div className='section_1 padding-top'>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Brokerage For Private Investments</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'> Brokerage For Private <span className='font-weight'>Investments</span></h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Provide access to a select range of private investment assets issued on the Verified Network for your asset management and brokerage clients."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Increase your clients’ returns by enabling access to a large number of underlying assets."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
           <div className='margin_right'>
             <img className='Group_17513_service_img' src="images/Group 17515_service.png" />

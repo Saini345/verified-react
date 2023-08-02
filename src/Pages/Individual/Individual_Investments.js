@@ -79,7 +79,8 @@ function Individual_Investments() {
 }/>
 
      <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Invest in assets with higher returns, so far only available to the wealthy."/>
+      <h2 className="font-weight_400 padding-top margin_right margin_left font-size-50"><span className='font-weight color-parpule'>Invest</span> in assets with higher returns, so far only available to the wealthy.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Invest in assets with higher returns, so far only available to the wealthy."/> */}
       </div>
 
       <div className='section_1 padding-top '>
@@ -88,7 +89,7 @@ function Individual_Investments() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'>Higher Return Investments</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Higher Return</span> Investments</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Earn interest on your assets by purchasing investment products on the Verified Network."/> <br/><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Benefit from higher interest rates outside your local currency on investments into financial products across the globe."/>
           <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
@@ -97,7 +98,7 @@ function Individual_Investments() {
       <div className='section_1 padding-top '>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40 width_459'>Private Investment Opportunities</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40 width_459'><span className='font-weight'>Private Investment</span> Opportunities</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className="display_inline ml"pragraph="Explore private investment opportunities from the best asset managers."/><br/><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Access to the best investment deals without opening an expensive wealth account."/>
           <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
@@ -114,7 +115,7 @@ function Individual_Investments() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40  width_459'>Liquidity For Private Investments</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40  width_459'><span className='font-weight'>Liquidity</span> For Private Investments</h2><br/>
           <img className='Group_9_img' src ="images/Group (9).png"/><Pragraph className="display_inline ml" Pragraph="Sell your private investments directly and get access to liquidity when you need it – without having to pay expensive brokerage for trading investments."/>
           <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
         </div>
@@ -123,8 +124,8 @@ function Individual_Investments() {
       <Individual_ZeroBalance individual_ZeroBalance={
         <div className='Zero-balance-purple'>
           <div className='margin_left padding-top'>
-          <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
-            {/* <h3 className=' font-weight-400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
+          <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+            {/* <h3 className=' font-weight_400 font-size-27 line-height-27 heading'>{pricing.heading}</h3> */}
             <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
           </div>
           <div className='section_1 margin_left margin_right padding-top'>
@@ -173,7 +174,7 @@ function Individual_Investments() {
       {/* <Individual_ZeroBalance className="" individual_ZeroBalance = {
   <div className='Zero-balance-purple'>
   <div className='margin_left padding-top margin_top'>
-  <Heading className="font-weight-400 font-size-27 line-height-27 heading" heading={pricing.heading} />
+  <Heading className="font-weight_400 font-size-27 line-height-27 heading" heading={pricing.heading} />
    <h3 className='font-weight font-size-35 line-height-35 heading'>{pricing.subheading}</h3>
   </div>
   <div className='section_1 margin_left margin_right padding-top'>
@@ -222,7 +223,7 @@ function Individual_Investments() {
 
 <Individual_Quations individual_Quations={
         <div>
-          <div><h2 className='center heading font-weight-400 '>Frequently Asked Questions</h2></div>
+          <div><h2 className='center heading font-weight_400'>Frequently Asked Questions</h2></div>
           {faq.map(faq=>{
           return<Individual_Quations individual_Quations={<div>
         <div className='box-shadow div-height div-width border-radius-20 margin_left margin_right section_1 margin_top'>

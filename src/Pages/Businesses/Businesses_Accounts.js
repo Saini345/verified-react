@@ -73,7 +73,8 @@ function Businesses_Accounts() {
         </div>
       } />
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="One Account to Rule Them All." />
+        <h2 className=" font-weight_400 padding-top margin_left font-size-50"><span className='font-weight color_skyblue'>One Account</span> to Rule Them All.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="One Account to Rule Them All." /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -82,7 +83,7 @@ function Businesses_Accounts() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'> Multi Currency Accounts</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Multi Currency</span> Accounts</h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Use your Verified Network account in more than 30+ currencies with open democratic access to a regulation compliant digital assets platform."/>
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>

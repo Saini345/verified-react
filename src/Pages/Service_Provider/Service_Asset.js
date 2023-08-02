@@ -74,7 +74,8 @@ function Service_Asset() {
       } />
 
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Create Assets that are Credit Worthy." />
+        <h2 className="padding-top margin_left font-size-50 font-weight_400">Create <span className='font-weight color-blue'>Assets</span> that are Credit Worthy.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Create Assets that are Credit Worthy." /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -83,10 +84,10 @@ function Service_Asset() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'>Asset Origination</h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'>Asset <span className='font-weight'>Origination</span></h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Originate digital assets and issue securities that are secure and credit worthy for clients on the Verified Network."></Pragraph><br/><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Take advantage of liquidity and capital on any exchange connected to the Verified Network."></Pragraph>
-          <h4 className='Learn-More_1 color-parpule NavLink margin_top'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+          <h4 className='Learn-More_1 color-blue NavLink margin_top'>Try it out <span><img src="images/Group (1).png" /></span></h4>
         </div>
       </div>
 

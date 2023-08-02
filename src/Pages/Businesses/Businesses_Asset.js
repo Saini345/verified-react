@@ -73,7 +73,8 @@ function Businesses_Asset() {
 
 
       <div>
-        <Heading className="padding-top margin_left font-size-50" heading="Secure Assets in your Verified Account. " />
+        <h2 className="padding-top margin_left font-size-50 font-weight_400"><span className='font-weight color_skyblue'>Secure Assets</span> in your Verified Account.</h2>
+        {/* <Heading className="padding-top margin_left font-size-50" heading="Secure Assets in your Verified Account. " /> */}
       </div>
 
       <div className='section_1 padding-top'>
@@ -82,7 +83,7 @@ function Businesses_Asset() {
         </div>
 
         <div className='margin_right margin_left margin_top_100'>
-          <h2 className='heading font-weight font-size-40'>Self Custody of Assets </h2><br/>
+          <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'>Self Custody </span>of Assets </h2><br/>
           <img className='Group_9_img ' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Stop paying high fees to banks for custody of your assets. Keep your assets secure with Verified self-custody and make their value go the extra mile."/>
           <h4 className='Learn-More_1 color_skyblue NavLink margin_top'>Try it out <span><img className='arow_hw' src="images/Group (10).png" /></span></h4>
         </div>

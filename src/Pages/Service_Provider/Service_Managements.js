@@ -77,7 +77,8 @@ function Service_Managements() {
         } />
 
         <div>
-          <Heading className="padding-top margin_left font-size-50" heading="Manage Capital, and Maintain High Asset Quality.  " />
+          <h2  className="padding-top margin_left font-size-50 margin_right font-weight_400"><span className='font-weight color-blue'>Registration, Custody </span>and Transfer of Assets just got an Upgrade.</h2>
+          {/* <Heading className="padding-top margin_left font-size-50" heading="Manage Capital, and Maintain High Asset Quality.  " /> */}
         </div>
 
         <div className='section_1 padding-top'>
@@ -86,20 +87,20 @@ function Service_Managements() {
           </div>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Digital Asset Custody</h2><br/>
+            <h2 className='heading font-weight-400 font-size-40'> Digital <span className='font-weight'>Asset Custody</span></h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Exercise control on assets by providing regulated custody for fiat currencies paid by investors on the Verified Network."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Settle funds for issuance of tokenized securities by businesses. "></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
         </div>
 
         <div className='section_1 padding-top'>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'> Transfer Agency</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'><span className='font-weight'> Transfer</span> Agency</h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Function as a regulated custodian and provide custody for underlying assets of tokenized securities."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/> <Pragraph className="display_inline ml" pragraph="Transfer assets from sellers to buyers to fulfill transactions of tokenized securities."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
           <div className='margin_right'>
             <img className='Group_17539_servic_img' src="images/Group 17539_service.png" />
@@ -112,10 +113,10 @@ function Service_Managements() {
           </div>
 
           <div className='margin_right margin_left margin_top'>
-            <h2 className='heading font-weight font-size-40'>Register Tokenized Securities</h2><br/>
+            <h2 className='heading font-weight_400 font-size-40'>Register <span className='font-weight'>Tokenized </span>Securities</h2><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Partner with businesses on the Verified Network and register shares and bonds issued by them  with national depositories  and on the blockchain ledger, subject to country regulations."></Pragraph><br/><br/>
             <img className='Group_9_img' src = "images/Group (9).png"/><Pragraph className="display_inline ml" pragraph="Offer registered tokenized securities for subscription to investors on the Verified Network."></Pragraph>
-            <h4 className='Learn-More_1 color-parpule margin_top NavLink'>Try it out <span><img src="images/Group (3).png" /></span></h4>
+            <h4 className='Learn-More_1 color-blue margin_top NavLink'>Try it out <span><img src="images/Group (1).png" /></span></h4>
           </div>
         </div>
 
