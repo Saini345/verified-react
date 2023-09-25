@@ -217,12 +217,12 @@ function Individual_Account() {
                 <td className="data">Account</td>
                 <td className="data">Account</td>
                 <td className="data">Asset Origination</td>
-                <td className="data">About us</td>
+                <a href="About_us" className='NavLink'><td className="data color_grey">About us</td></a>
                 <td className="data">Operators</td>
               </tr>
               <tr>
                 <td className="data"></td>
-                <td className="data">Assets</td>
+                <a href="Assets" className='NavLink'><td className="data color_grey">Assets</td></a>
                 <td className="data">Assets</td>
                 <td className="data">Asset Management</td>
                 <td className="data">Assets</td>
@@ -241,7 +241,7 @@ function Individual_Account() {
                 <td className="data">Payment</td>
                 <td className="data">Payment</td>
                 <td className="data">Payments</td>
-                <td className="data">Contact Us</td>
+                <a href="" className='data NavLink'><td className="data color_grey">Contact Us</td></a>
 
               </tr>
               <tr>

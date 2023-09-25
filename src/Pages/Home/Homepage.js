@@ -86,15 +86,6 @@ function Homepage() {
                 <div className='margin_left'>
                     <img className='info_1_img' src="images/info_1.png" />
                 </div>
-                {/* {UsecaseCard.map(UsecaseCard=>{
-                    return<div className='margin_right'>
-                    <img src="images/Group 161.png" />
-                    <div className='font-size-40 margin_top'>For <span className='color-parpule'>{UsecaseCard.title}</span></div>
-                    <h4 className='heading_4'>{UsecaseCard.subtitle}</h4>
-                    <p className='pragraph'>{UsecaseCard.description}</p>
-                    <a href={UsecaseCard.linkUrl}><h4 className='Learn-More_1 color-parpule'>Learn More  <span><img src="images/Group (3).png" /></span></h4></a>
-                </div>
-})} */}
                 <div className='margin_right margin_left'>
                     <img className='margin_left' src="images/Group 161.png" />
                     <div className='font-size-40 margin_top margin_left'>For <span className='color-parpule'>{Individuals.title}</span></div>
@@ -247,7 +238,7 @@ function Homepage() {
                                 <td className="data">Account</td>
                                 <td className="data">Account</td>
                                 <td className="data">Asset Origination</td>
-                                <td className="data">About us</td>
+                               <a href="About_us" className='NavLink'><td className="data color_grey">About us</td></a>
                                 <td className="data">Operators</td>
                             </tr>
                             <tr>
@@ -271,7 +262,7 @@ function Homepage() {
                                 <td className="data">Payment</td>
                                 <td className="data">Payment</td>
                                 <td className="data">Payments</td>
-                                <td className="data">Contact Us</td>
+                                <a href="Contact" className='data NavLink'><td className="data color_grey">Contact Us</td></a>
 
                             </tr>
                             <tr>

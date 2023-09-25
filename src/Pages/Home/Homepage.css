@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0em;
-    Width: 236px;
+    width: 236px;
     Height: 49px;
     background-color: white;
     border: 3px solid rgba(142, 95, 245, 1);
@@ -268,6 +268,11 @@ ul li {
     justify-content: space-between; */
 }
 
+.form-error{
+    color :red;
+    margin-left:10px;
+}
+
 .pragraph_hw {
     width: 459px;
     height: 120px;
@@ -306,6 +311,11 @@ ul li {
 .Group_17516_service_img {
     width: 420px;
     height: 462px;
+}
+
+.loction-img{
+    width: 13.44px;
+    height: 16px;
 }
 
 .Group_17539_servic_img {
@@ -350,7 +360,7 @@ ul li {
 }
 
 .Verified_img {
-    Width: 169px;
+    width: 169px;
 }
 
 .finance-img {
@@ -369,7 +379,7 @@ ul li {
 }
 
 .Sownoad-img {
-    Width: 777px;
+    width: 777px;
     Height: 562px;
 }
 
@@ -393,17 +403,17 @@ ul li {
 }
 
 .individual_payments_DebitCard_img {
-    Width: 457px;
+    width: 457px;
     Height: 357px;
 }
 
 .individual_payments_Peer_img {
-    Width: 471px;
+    width: 471px;
     Height: 441px;
 }
 
 .individual_investments_1_img {
-    Width: 397px;
+    width: 397px;
     Height: 565px;
 }
 
@@ -454,6 +464,24 @@ ul li {
     height: 418px;
 }
 
+.Group_17490_img{
+    width: 483.81px;
+    height: 665.04px;
+}
+
+.Group_501_img{
+    width: 367px;
+    height: 236px;
+    border-radius: 20px;
+    margin-left: 40%;
+    position: absolute;
+    top:500%;
+}
+
+.Group-502_img{
+    width: 16.12px;
+    height: 16px;
+}
 .feature {
     height: 130px;
     width: 130px;
@@ -477,6 +505,50 @@ ul li {
     height: 330px;
 }
 
+.box-height-373{
+    height: 373px;
+}
+
+.box-height-367{
+    height: 367px;
+}
+
+.height-60{
+    height:60px;
+}
+.box-height-350{
+    height: 350px;
+}
+
+.Group_17041_img{
+    width: 159.89px;
+    height: 42.48px;
+}
+
+.Grey_2_img{
+    width: 136.67px;
+    height: 36.94px; 
+}
+
+.icici_bank_logo_symbol_2_img{
+    width: 172.06px;
+    height: 36.94px;
+}
+
+.KKK_2_img{
+    width: 142px;
+    height: 36.94px;
+}
+
+.Mask-Group-img{
+    width: 293.12px;
+    height: 371px;
+}
+
+.Map_img{
+    width:1073.89px;
+    Height:605.01px;
+}
 /* .box-height-510 {
     height: 510px;
 } */
@@ -485,12 +557,41 @@ ul li {
     width: 370px;
 }
 
-/* .width_459{
-    width: 459px;
-} */
+.width_557{
+    width: 557px;
+}
+
+.width-217{
+    width:217px;
+}
+
+.width-363{
+    width:363px;
+}
+
+.width-459{
+    width:459px;
+}
 
 .box-width {
     width: 316px;
+}
+
+.width-942{
+    width:942px;
+}
+.width-90{
+    width:90px;
+}
+.height-35{
+    height:35px;
+}
+.height-364{
+    height:364px;
+}
+
+.height-1280{
+    height: 1280px;
 }
 
 .box-height {
@@ -505,8 +606,18 @@ ul li {
     Height: 82px;
 }
 
+.input-height{
+  height:54px;
+}
+
+.height_736{
+   height:736px;
+}
+.height-206{
+    height: 206px;
+}
 .div-width {
-    Width: 1136px;
+    width: 1136px;
 }
 
 .header_height {
@@ -523,11 +634,6 @@ ul li {
 
 .line-height-27 {
     line-height: 27px;
-}
-
-
-.border_color_blue {
-    border: 2px solid rgba(78, 89, 231, 1)
 }
 
 .Latest-News {
@@ -560,6 +666,23 @@ ul li {
 
 .background-color-parpule {
     background: rgba(217, 198, 255, 0.3);
+}
+
+.bg-light-blue{
+  background: linear-gradient(276.35deg, #C4EAFF 4.97%, rgba(220, 242, 255, 0.6) 84.05%);
+}
+
+.bg-light-blue-2{
+    background: linear-gradient(273.22deg, rgba(193, 241, 238, 0.3) -2.7%, rgba(107, 202, 255, 0.5) 83.56%);
+
+}
+
+.bg_white_blue{
+    background: rgb(249, 249, 254);
+}
+
+.background-color-C1F1EE{
+    background-color: #d3f8f6;
 }
 
 .Asked-questions-color {
@@ -605,6 +728,10 @@ ul li {
     color: rgba(143, 143, 152, 1);
 }
 
+.color-C1F1EE{
+    color:#0ba49a;
+}
+
 .login_button_color {
     background-color: #4E59E7;
 }
@@ -641,6 +768,9 @@ ul li {
     margin-top: 15px;
 }
 
+.margin-top-105{
+    margin-top: 105%;
+}
 .ml {
     margin-left: 10px;
 }
@@ -657,9 +787,20 @@ ul li {
     margin-right: 50px;
 }
 
+.margin_left_23{
+    margin-left: 23%;
+}
+
+.margin_right_23{
+    margin-right: 23%;
+}
 .padding_top_20 {
     padding-top: 20px;
 }
+
+/* .padding_top_15{
+    padding-top:15px;
+} */
 
 .padding_top_40 {
     padding-top: 40px;
@@ -693,6 +834,14 @@ ul li {
     padding-top: 100px;
 }
 
+.padding-top-300{
+    padding-top:30%;
+}
+
+.padding-top-220{
+    padding-top:22%;
+}
+
 
 .font-size-60 {
     font-size: 60px;
@@ -702,6 +851,9 @@ ul li {
     font-size: 50px;
 }
 
+.font-size-18 {
+    font-size: 18px;
+}
 /* .font-weight_700 {
     font-weight: 700;
 }  */
@@ -734,10 +886,6 @@ ul li {
     font-size: 27px;
 }
 
-.font-size-18 {
-    font-size: 18px;
-}
-
 .center {
     text-align: center;
     /* font-size: 40px; */
@@ -750,13 +898,42 @@ ul li {
 .box-shadow {
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
 }
+.hover-shadow:hover{
+    /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08);
+    
+}
 
 .border-radius-20 {
     border-radius: 20px;
 }
 
+.border-radius-8{
+    border-radius:8px;
+}
+
+.border-radius-60{
+    border-radius:60px;
+}
+
+.border-radius-16{
+    border-radius: 16px;
+}
+
 .border_skyblue {
     border: 1.5px solid rgba(8, 192, 181, 1)
+}
+
+.border_color_blue {
+    border: 2px solid rgba(78, 89, 231, 1)
+}
+
+.border_color_skyblue-2{
+    border:2px solid #DCE2FF;
+}
+
+.border_color_skyblue{
+    border:1px solid #DCE2FF;
 }
 
 .data {
@@ -775,3 +952,57 @@ ul li {
 .display_inline {
     display: inline;
 }
+
+.about_box{
+    box-shadow: 0px 4px 50px 0px rgba(220, 226, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
+}
+
+.box-position{
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    left:0%;
+}
+
+ .search{
+	flex:2;
+} 
+.display-flex{
+display: flex;
+}
+.search label{
+	position:relative;
+	/* width:100%; */
+	padding:10px 10px;
+	/* border:2px solid #DCE2FF; */
+    border-radius: 16px;
+	/* margin-right:15px; */
+    /* height:54px; */
+    width:459px;
+    
+}
+
+.search label input{
+	/* padding:6px 10px; */
+	/* width:30%; */
+	border:none;
+	outline:none;
+    /* border-right:0px solid #DCE2FF;
+	border-bottom:0px solid #DCE2FF; */
+    /* border-radius: 16px; */
+}
+.search label img{
+	/* position:absolute; 
+	 right:0;
+	top:0; */
+	/* padding-left:5px; */
+    margin-left:12px;
+	color:gray;
+	/* background:#def6e9;
+	border-left:1px solid #b2bec3;
+	border-bottom:1px solid #b2bec3; */
+	cursor:pointer;
+    margin-right:12px; 
+}
+

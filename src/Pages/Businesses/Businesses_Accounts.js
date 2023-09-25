@@ -34,7 +34,7 @@ function Businesses_Accounts() {
     <div>
      <Header Header={<div className="header_color_skyblue header_height">
         <div class="navbar">
-          <a><img className="margin_left Verified_img" src="images/Verified.png" /></a>
+        <a href="/"><img className="margin_left Verified_img" src="images/Verified.png" /></a>
           <ul className="li-list">
             <li><NavLink to="/Individuals" className="NavLink color-black">Individuals</NavLink></li>
             <li><NavLink to="/Businesses" className="NavLink color-black">Businesses</NavLink></li>
@@ -177,7 +177,7 @@ function Businesses_Accounts() {
                 <td className="data">Account</td>
                 <td className="data">Account</td>
                 <td className="data">Asset Origination</td>
-                <td className="data">About us</td>
+                <a href="About_us" className='NavLink'><td className="data color_grey">About us</td></a>
                 <td className="data">Operators</td>
               </tr>
               <tr>
@@ -201,7 +201,7 @@ function Businesses_Accounts() {
                 <td className="data">Payment</td>
                 <td className="data">Payment</td>
                 <td className="data">Payments</td>
-                <td className="data">Contact Us</td>
+                <a href="Contact" className='data NavLink'><td className="data color_grey">Contact Us</td></a>
 
               </tr>
               <tr>

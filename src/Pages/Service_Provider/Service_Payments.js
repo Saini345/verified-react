@@ -148,7 +148,7 @@ you can Trust." /> */}
                   <td className="data">Account</td>
                   <td className="data">Account</td>
                   <td className="data">Asset Origination</td>
-                  <td className="data">About us</td>
+                  <a href="About_us" className='NavLink'><td className="data color_grey">About us</td></a>
                   <td className="data">Operators</td>
                 </tr>
                 <tr>
@@ -172,7 +172,7 @@ you can Trust." /> */}
                   <td className="data">Payment</td>
                   <td className="data">Payment</td>
                   <td className="data">Payments</td>
-                  <td className="data">Contact Us</td>
+                  <a href="Contact" className='data NavLink'><td className="data color_grey">Contact Us</td></a>
 
                 </tr>
                 <tr>

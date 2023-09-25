@@ -18,11 +18,17 @@ import Service_Management from "./Pages/Service_Provider/Service_Management";
 import Service_Managements from "./Pages/Service_Provider/Service_Managements";
 import Service_Payments from "./Pages/Service_Provider/Service_Payments";
 import Service_Network_Operator from "./Pages/Service_Provider/Service_Network_Operator";
+import About_us from "./Pages/About_us";
+import Assets from "./Pages/Assets";
+import Contact from "./Pages/Contact";
+
 function App() {
   return (
     <>
+    
      <BrowserRouter>
       <Routes>
+        
         <Route path = "/" element= {<Homepage/>}/>
         <Route path="/Individuals" element={<Individual_Account/>} />
       <Route path="/Businesses" element = {<Businesses_Accounts/>}/>
@@ -46,9 +52,13 @@ function App() {
         <Route path="/ServiceManagements" element={<Service_Managements/>}/>
         <Route path="/ServicePayments" element = {<Service_Payments/>}/>
         <Route path="/ServiceNetworkOperator" element = {<Service_Network_Operator/>}/>
+        <Route path="about_us" element={<About_us/>}/>
+        <Route path="assets" element={<Assets/>}/>
+       <Route path="contact" element={<Contact/>}/>
+        
       </Routes>
      </BrowserRouter>
-
+      {/* <About_us/> */}
     </>
   );
 }
